@@ -1,0 +1,177 @@
+body {
+    font-family: "Arial";
+    margin: 0;
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url();
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary_color: black;
+    --second_color: #282a35;
+    
+}
+
+.wrapper {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.main_header::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+.main_header > div{
+    float: left;
+}
+.main_header > div:first-child {
+    width: 43%;
+}
+.main_header > div:nth-child(2) {
+    width: 25%;
+}
+.main_header > div:last-child {
+    width: 32%;
+}
+
+
+/* ######## first column ######## */
+
+.first_col > div{
+    float: left;
+    padding-right: 2rem;
+}
+
+/* .menu_mobile{
+    
+} */
+
+.menu_list_desk{
+    display: none;
+}
+
+@media screen and (min-width: 620px) {
+    .main_header > div:first-child {
+        width: 25%;
+    }
+    .main_header > div:nth-child(2) {
+        width: 40%;
+    }
+    .main_header > div:last-child {
+        width: 35%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .main_header > div:first-child {
+        width: 42%;
+    }
+    .main_header > div:nth-child(2) {
+        width: 21%;
+    }
+    .main_header > div:last-child {
+        width: 37%;
+    }
+    .menu_mobile{
+        display: none;
+    }
+    .menu_list_desk {
+        display: block;
+    }
+    .menu_list_desk > ul > li{
+        float: left;
+        padding-right: 0.5rem;
+    }
+    .menu_list_desk > ul > li > a{
+        padding-right: 1rem;
+    }
+}
+
+/* ######## second column ######## */
+
+.second_col > div {
+    float: left;
+    padding-right: 0.5rem;
+}
+
+.search_input{
+    display: none;
+}
+
+@media screen  and (min-width: 620px) {
+    .search_input{
+        display: block;
+    }
+}
+
+/* ######## third column ######## */
+
+.third_col > div {
+    float: left;
+}
+
+.right_list_desk{
+    display: none;
+}
+
+.signup{
+    display: none;
+}
+.login{
+    padding-left: 2.5rem;
+}
+
+@media screen and (min-width: 620px) {
+    .signup{
+        display: block;
+        padding-left: 5rem;
+    }
+    .login{
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .right_list_desk{
+        display: block;
+    }
+    .right_list_desk > nav > a{
+        float: left;
+    }   
+    .right_list_desk > nav > a{
+        padding-left: 3rem;
+    }
+    .signup{
+        padding-left: 2rem;
+        margin-left: 1rem;
+    }
+    .login{
+        padding-left: 1rem;
+    }
+}
