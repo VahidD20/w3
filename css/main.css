@@ -36,14 +36,15 @@ ul {
     
 }
 
-.wrapper {
+/* .wrapper {
+    position: sticky;
+} */
+.main_header{
     padding: 0 0.5rem 0 0.5rem;
+    position: sticky;
 }
 
-.main_header{
-    position: fixed;
-    width: 98%;
-}
+
 .main_header::after{
     clear: both;
     content: "";
@@ -96,10 +97,10 @@ ul {
         width: 28%;
     }
     .main_header > div:nth-child(2) {
-        width: 37%;
+        width: 38%;
     }
     .main_header > div:last-child {
-        width: 35%;
+        width: 34%;
     }
     .menu_mobile{
         padding-left: 1.8rem;
@@ -169,9 +170,9 @@ ul {
         padding: 10px;
         width: 11rem;
     }
-    /* .search_mobile{
-
-    } */
+    .search_mobile{
+        height: 3.5rem;
+    }
     .search_mobile > button{
         float: right;
         position: relative;
@@ -222,6 +223,8 @@ ul {
     .signup{
         display: block;
         padding: 1.2rem 0 0.93rem 0.5rem;
+        position: relative;
+        left: 2rem;
     }
     .signup > a{
         background-color: #04aa6d;
@@ -230,6 +233,7 @@ ul {
     }
     .login{
         padding-left: 0.1rem;
+        padding-top: 1.2rem;
     }
 
 }
@@ -255,5 +259,71 @@ ul {
     } */
 }
 
-/* ########### list bar ########### */
+/* ########### list bar mobile ########### */
 
+.mobile_bar{
+    background-color: #282a35;
+}
+
+.mult_sign{
+    background-color: #282a35;
+    padding: 1rem 0 1rem 18rem;
+    width: 100%;
+}
+/* @media screen and (min-width: 620px) {
+    .mult_sign{
+
+    }
+} */
+
+.tutorial_line{
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 20px;
+}
+.tutorial_line > svg{
+    float: right;
+    margin-right: 1.1rem;
+}
+
+.first_title{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    color: #fff4a3;
+}
+.submenu{
+    padding-left: 2rem;
+    color: #fff;
+}
+.submenu > ul > li{
+    padding: 0.5rem;
+}
+
+.submenu > ul > li > a{
+    color: #fff4a3;
+    padding: 1px 8px 1px 8px;
+    border: 1px solid #fff4a3;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    opacity: 0.9;
+}
+
+.mobile_bar > nav > ul> li > a{
+    color: #fff;
+    padding-left: 2.5rem;
+}
+
+.li{
+    padding: 1rem 0 1rem 0rem;
+    border-bottom: 1px solid #43444a;
+}
+.li > svg{
+    float: right;
+    margin-right: 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile_bar{
+        display: none;
+    }
+}
