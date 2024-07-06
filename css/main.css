@@ -40,6 +40,10 @@ ul {
     padding: 0 0.5rem 0 0.5rem;
 }
 
+.main_header{
+    position: fixed;
+    width: 98%;
+}
 .main_header::after{
     clear: both;
     content: "";
@@ -63,12 +67,25 @@ ul {
 
 .first_col > div{
     float: left;
-    padding-right: 2rem;
 }
 
-/* .menu_mobile{
-    
-} */
+.logo_home{
+    padding-top: 0.6rem;
+    padding-left: 0.2rem;
+}
+
+.menu_mobile{
+    padding-left: 1.5rem;
+    padding-top: 0.6rem;
+}
+
+.menu_mobile > button{
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.menu_mobile > button > svg {
+    padding-top: 0.4rem;    
+}
 
 .menu_list_desk{
     display: none;
@@ -76,13 +93,16 @@ ul {
 
 @media screen and (min-width: 620px) {
     .main_header > div:first-child {
-        width: 25%;
+        width: 28%;
     }
     .main_header > div:nth-child(2) {
-        width: 40%;
+        width: 37%;
     }
     .main_header > div:last-child {
         width: 35%;
+    }
+    .menu_mobile{
+        padding-left: 1.8rem;
     }
     
 }
@@ -103,12 +123,18 @@ ul {
     .menu_list_desk {
         display: block;
     }
+    .menu_list_desk > ul{
+        padding-top: 0.7rem;
+    }
     .menu_list_desk > ul > li{
         float: left;
-        padding-right: 0.5rem;
+        padding-left: 1.1rem;
     }
     .menu_list_desk > ul > li > a{
-        padding-right: 1rem;
+        font-size: 16px;
+    }
+    .menu_list_desk > ul > li > a > svg{
+        padding-top: 0.5rem;
     }
 }
 
@@ -116,16 +142,57 @@ ul {
 
 .second_col > div {
     float: left;
-    padding-right: 0.5rem;
+}
+
+.search_mobile > button{
+    padding-right: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 0.2rem;
 }
 
 .search_input{
     display: none;
 }
 
+.mode{
+    padding-top: 1rem;
+}
+
 @media screen  and (min-width: 620px) {
     .search_input{
         display: block;
+        padding-left: 0.3rem;
+        padding-top: 0.6rem;
+    }
+    .search_input > input {
+        border-radius: 25px;
+        padding: 10px;
+        width: 11rem;
+    }
+    /* .search_mobile{
+
+    } */
+    .search_mobile > button{
+        float: right;
+        position: absolute;
+        right: 16rem;
+        top: 0.1rem;
+    }
+
+    .mode{
+        padding-top: 1.2rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .search_mobile{
+        padding-left: 1rem;
+    }
+    .search_mobile > button{
+    position: absolute;
+    right: 29.5rem;
+    top: 0.1rem;
     }
 }
 
@@ -143,16 +210,26 @@ ul {
     display: none;
 }
 .login{
-    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+.login > a {
+    background-color: #d9eee1;
+    border-radius: 22px;
+    padding: 11px 29px 11px 29px ;
 }
 
 @media screen and (min-width: 620px) {
     .signup{
         display: block;
-        padding-left: 5rem;
+        padding: 1.2rem 0 0.93rem 0.5rem;
+    }
+    .signup > a{
+        background-color: #04aa6d;
+        border-radius: 22px;
+        padding: 11px 21px 11px 21px;
     }
     .login{
-        padding-left: 1rem;
+        padding-left: 0.1rem;
     }
 
 }
@@ -165,13 +242,18 @@ ul {
         float: left;
     }   
     .right_list_desk > nav > a{
-        padding-left: 3rem;
+        padding-left: 1.1rem;
+    }
+    .right_list_desk > nav{
+        padding-top: 1.2rem;
     }
     .signup{
-        padding-left: 2rem;
-        margin-left: 1rem;
-    }
-    .login{
         padding-left: 1rem;
     }
+    /* .login{
+
+    } */
 }
+
+/* ########### list bar ########### */
+
