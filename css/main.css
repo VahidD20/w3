@@ -174,9 +174,9 @@ ul {
     } */
     .search_mobile > button{
         float: right;
-        position: absolute;
-        right: 16rem;
-        top: 0.1rem;
+        position: relative;
+        right: -1rem;
+        top: -3rem;
     }
 
     .mode{
@@ -190,9 +190,9 @@ ul {
         padding-left: 1rem;
     }
     .search_mobile > button{
-    position: absolute;
-    right: 29.5rem;
-    top: 0.1rem;
+    position: relative;
+    right: -1rem;
+    top: -3rem;
     }
 }
 
