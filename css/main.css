@@ -1,6 +1,8 @@
 body {
     font-family: "Arial";
     margin: 0;
+    font-size: 15px;
+    font-weight: inherit;
 }
 
 @font-face {
@@ -126,6 +128,7 @@ ul {
     }
     .menu_list_desk > ul{
         padding-top: 0.7rem;
+        display: inline-block;
     }
     .menu_list_desk > ul > li{
         float: left;
@@ -137,6 +140,7 @@ ul {
     .menu_list_desk > ul > li > a > svg{
         padding-top: 0.5rem;
     }
+
 }
 
 /* ######## second column ######## */
@@ -167,8 +171,10 @@ ul {
     }
     .search_input > input {
         border-radius: 25px;
-        padding: 10px;
+        padding: 8px;
         width: 11rem;
+        font-size: 16px;
+        border: 1px solid #bfbfbf;
     }
     .search_mobile{
         height: 3.5rem;
@@ -176,7 +182,7 @@ ul {
     .search_mobile > button{
         float: right;
         position: relative;
-        right: -1rem;
+        right: -0.5rem;
         top: -3rem;
     }
 
@@ -192,7 +198,7 @@ ul {
     }
     .search_mobile > button{
     position: relative;
-    right: -1rem;
+    right: -0.5rem;
     top: -3rem;
     }
 }
@@ -230,10 +236,14 @@ ul {
         background-color: #04aa6d;
         border-radius: 22px;
         padding: 11px 21px 11px 21px;
+        color: #fff;
     }
     .login{
         padding-left: 0.1rem;
         padding-top: 1.2rem;
+    }
+    .login > a{
+        padding: 11px 20px 11px 36px ;
     }
 
 }
@@ -250,6 +260,7 @@ ul {
     }
     .right_list_desk > nav{
         padding-top: 1.2rem;
+        display: inline-block;
     }
     .signup{
         padding-left: 1rem;
@@ -270,11 +281,12 @@ ul {
     padding: 1rem 0 1rem 18rem;
     width: 100%;
 }
-/* @media screen and (min-width: 620px) {
+@media screen and (min-width: 620px) {
     .mult_sign{
+    padding: 1rem 0 1rem 34.5rem;
 
     }
-} */
+}
 
 .tutorial_line{
     background-color: #fff;
@@ -290,7 +302,12 @@ ul {
     padding-left: 2rem;
     padding-top: 1rem;
     color: #fff4a3;
+    padding-bottom: 0.5rem;
 }
+.first_title > h1 {
+    font-weight: inherit;
+}
+
 .submenu{
     padding-left: 2rem;
     color: #fff;
@@ -311,6 +328,7 @@ ul {
 .mobile_bar > nav > ul> li > a{
     color: #fff;
     padding-left: 2.5rem;
+    font-size: 18px;
 }
 
 .li{
