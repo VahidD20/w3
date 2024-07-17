@@ -1,7 +1,11 @@
 body {
     margin: 0;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: inherit;
+}
+
+h1 {
+    margin: 0;
 }
 
 a {
@@ -77,6 +81,7 @@ ul {
 
 .logo > a{
     display: block;
+    padding-left: 0.5rem;
 }
 
 .logo > a > img{
@@ -86,13 +91,16 @@ ul {
 /* .menu_mobile{
     padding-left: 1.5rem;
 } */
+.menu_mobile > button {
+    display: block;
+}
 
 .menu_mobile > button > span{
     cursor: pointer;
     font-size: 0.9rem;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 }
-.menu_mobile > button > svg {
+.menu_mobile > button > span > svg {
     padding-top: 0.4rem;    
 }
 
@@ -109,11 +117,12 @@ ul {
     }
     .main_header > div:last-child {
         width: 34%;
-    }
+    }    
+}
+@media screen and (min-width: 620px) {
     .menu_mobile{
-        padding-left: 1.8rem;
+        padding-left: 1rem;
     }
-    
 }
 
 @media screen and (min-width: 1200px) {
@@ -126,27 +135,34 @@ ul {
     .main_header > div:last-child {
         width: 37%;
     }
+}
+@media screen and (min-width: 1200px) {
     .menu_mobile{
         display: none;
     }
+}
+@media screen and (min-width: 1200px) {
     .menu_list_desk {
         display: block;
     }
-    .menu_list_desk > ul{
-        padding-top: 0.7rem;
+}
+@media screen and (min-width: 1200px) {
+    .menu_list_item{
+        display: block;
+    }
+    .menu_list_item > li{
         display: inline-block;
+        padding-left: 1.3rem;
     }
-    .menu_list_desk > ul > li{
-        float: left;
-        padding-left: 1.1rem;
+    .menu_list_item > li > a{
+        font-size: 0.8rem;
     }
-    .menu_list_desk > ul > li > a{
-        font-size: 16px;
-    }
-    .menu_list_desk > ul > li > a > svg{
+    .menu_list_item > li > a > svg{
         padding-top: 0.5rem;
     }
-
+    .menu_list_item > li:first-child {
+        padding-left: 2.2rem;
+    }
 }
 
 /* ######## second column ######## */
@@ -154,26 +170,58 @@ ul {
 .second_col > div {
     float: left;
 }
+.second_col{
+    padding: 0.85rem 0.85rem 0.85rem 0.4rem;
+}
+.second_col::after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.search_mobile{
+    padding-right: 1.6rem;
+}
 
 .search_mobile > button{
-    padding-right: 1.2rem;
-    padding-top: 1rem;
-    padding-left: 0.2rem;
+    display: block;
+}
+
+.search_mobile > button > svg{
+    display: block;
 }
 
 .search_input{
     display: none;
 }
 
-.mode{
-    padding-top: 1rem;
+.mode > button > svg{
+    display: block;
+}
+
+@media screen and (min-width: 620px) {
+    .second_col{
+        padding: 0.6rem 0 0.3rem 0;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .search_mobile{
+        padding: 0rem 1.5rem 0rem 0.6rem;
+        height: 2.3rem;
+    }
+    .search_mobile > button{
+        float: right;
+        position: relative;
+        right: 0.4rem;
+        bottom: 1.9rem;
+    }
 }
 
 @media screen  and (min-width: 620px) {
     .search_input{
         display: block;
-        padding-left: 0.3rem;
-        padding-top: 0.6rem;
+
     }
     .search_input > input {
         border-radius: 25px;
@@ -182,37 +230,36 @@ ul {
         font-size: 16px;
         border: 1px solid #bfbfbf;
     }
-    .search_mobile{
-        height: 3.5rem;
-    }
-    .search_mobile > button{
-        float: right;
-        position: relative;
-        right: -0.5rem;
-        top: -3rem;
-    }
+}
 
+@media screen and (min-width: 620px) {
     .mode{
-        padding-top: 1.2rem;
-        padding-left: 1.5rem;
+    padding-top: 0.4rem;
     }
 }
+
 
 @media screen and (min-width: 1200px) {
     .search_mobile{
         padding-left: 1rem;
     }
-    .search_mobile > button{
-    position: relative;
-    right: -0.5rem;
-    top: -3rem;
-    }
+    /* .search_mobile > button{
+
+    } */
 }
 
 /* ######## third column ######## */
 
+.third_col{
+    padding: 0.4rem;
+}
 .third_col > div {
     float: left;
+}
+.third_col::after{
+    clear: both;
+    content: "";
+    display: table;
 }
 
 .right_list_desk{
@@ -222,107 +269,133 @@ ul {
 .signup{
     display: none;
 }
-.login{
-    padding-top: 1rem;
-}
+/* .login{
+
+} */
 .login > a {
     background-color: #d9eee1;
     border-radius: 22px;
-    padding: 11px 29px 11px 29px ;
+    padding: 11px 24px 11px 24px ;
+    display: block;
 }
 
 @media screen and (min-width: 620px) {
+    .third_col{
+        position: relative;
+    }
+}
+@media screen and (min-width: 620px) {
     .signup{
         display: block;
-        padding: 1.2rem 0 0.93rem 0.5rem;
-        position: relative;
-        left: 2rem;
+        position: absolute;
+        left: 2.3rem;
     }
     .signup > a{
         background-color: #04aa6d;
         border-radius: 22px;
         padding: 11px 21px 11px 21px;
         color: #fff;
+        display: block;
     }
+}
+@media screen and (min-width: 620px) {
     .login{
-        padding-left: 0.1rem;
-        padding-top: 1.2rem;
+        position: absolute;
+        z-index: -1;
+        left: 6.2rem;
     }
     .login > a{
         padding: 11px 20px 11px 36px ;
     }
-
 }
+
 
 @media screen and (min-width: 1200px) {
     .right_list_desk{
         display: block;
-    }
+    } 
     .right_list_desk > nav > a{
+        padding-left: 1.3rem;
+        display: block;
         float: left;
-    }   
-    .right_list_desk > nav > a{
-        padding-left: 1.1rem;
     }
     .right_list_desk > nav{
-        padding-top: 1.2rem;
+        padding-top: 0.8rem;
         display: inline-block;
     }
+}
+@media screen and (min-width: 1200px) {
     .signup{
-        padding-left: 1rem;
+        position: absolute;
+        padding-left: 14rem;
+    }  
+}
+@media screen and (min-width: 1200px) {
+    .login{
+        position: absolute;
+        padding-left: 14rem;
     }
-    /* .login{
-
-    } */
 }
 
 /* ########### list bar mobile ########### */
 
 .mobile_bar{
     background-color: #282a35;
+    padding: 1rem 0rem;
+}
+.mult_sign::after{
+    clear: both;
+    content: "";
+    display: table;
 }
 
 .mult_sign{
     background-color: #282a35;
-    padding: 1rem 0 1rem 18rem;
-    width: 100%;
+    padding-bottom: 1rem;
+    padding-right: 1.2rem;
 }
+.mult_sign > svg{
+    display: block;
+    float: right;
+}
+
 @media screen and (min-width: 620px) {
     .mult_sign{
-    padding: 1rem 0 1rem 34.5rem;
+    padding: 1rem 1rem 1rem 0rem;
 
     }
 }
 
 .tutorial_line{
     background-color: #fff;
-    padding: 1rem;
-    font-size: 20px;
+    padding: 1.3rem;
+    font-size: 19px;
+    padding-left: 2rem;
 }
+
 .tutorial_line > svg{
     float: right;
-    margin-right: 1.1rem;
 }
 
 .first_title{
-    padding-left: 2rem;
-    padding-top: 1rem;
     color: #fff4a3;
-    padding-bottom: 0.5rem;
+    padding: 2rem 0 1rem 2.5rem;
 }
+
 .first_title > h1 {
     font-weight: inherit;
+    font-size: 1.25rem;
 }
 
 .submenu{
     padding-left: 2rem;
     color: #fff;
 }
-.submenu > ul > li{
+.submenu > li{
     padding: 0.5rem;
 }
 
-.submenu > ul > li > a{
+.submenu > li > a{
     color: #fff4a3;
     padding: 1px 8px 1px 8px;
     border: 1px solid #fff4a3;
@@ -331,19 +404,19 @@ ul {
     opacity: 0.9;
 }
 
-.mobile_bar > nav > ul> li > a{
+.mobile_list > ul> li > a{
     color: #fff;
     padding-left: 2.5rem;
     font-size: 18px;
 }
 
-.li{
+.mobile_list > ul > li:not(:first-child){
     padding: 1rem 0 1rem 0rem;
     border-bottom: 1px solid #43444a;
 }
-.li > svg{
+.mobile_list> ul > li > svg{
     float: right;
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
 }
 
 @media screen and (min-width: 1200px) {
