@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: inherit;
 }
 
@@ -224,10 +224,10 @@ ul {
 
     }
     .search_input > input {
-        border-radius: 25px;
-        padding: 8px;
+        border-radius: 1.56rem;
+        padding: 0.5rem;
         width: 11rem;
-        font-size: 16px;
+        font-size: 1rem;
         border: 1px solid #bfbfbf;
     }
 }
@@ -274,8 +274,8 @@ ul {
 } */
 .login > a {
     background-color: #d9eee1;
-    border-radius: 22px;
-    padding: 11px 24px 11px 24px ;
+    border-radius: 1.37rem;
+    padding: 0.68rem 1.5rem 0.68rem 1.5rem ;
     display: block;
 }
 
@@ -293,7 +293,7 @@ ul {
     .signup > a{
         background-color: #04aa6d;
         border-radius: 22px;
-        padding: 11px 21px 11px 21px;
+        padding: 0.68rem 1.31rem 0.68rem 1.31rem;
         color: #fff;
         display: block;
     }
@@ -305,7 +305,7 @@ ul {
         left: 6.2rem;
     }
     .login > a{
-        padding: 11px 20px 11px 36px ;
+        padding: 0.68rem 1.25rem 0.68rem 2.25rem ;
     }
 }
 
@@ -399,7 +399,7 @@ ul {
     color: #fff4a3;
     padding: 1px 8px 1px 8px;
     border: 1px solid #fff4a3;
-    border-radius: 10px;
+    border-radius: 0.62rem;
     margin-left: 0.5rem;
     opacity: 0.9;
 }
@@ -407,7 +407,7 @@ ul {
 .mobile_list > ul> li > a{
     color: #fff;
     padding-left: 2.5rem;
-    font-size: 18px;
+    font-size: 1.12rem;
 }
 
 .mobile_list > ul > li:not(:first-child){
