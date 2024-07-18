@@ -30,9 +30,13 @@ ul {
 }
 
 :root {
-    --primary_color: black;
+    --primary_color: #43444a;
     --second_color: #282a35;
-    
+    --border_color: #bfbfbf;
+    --bga_color: #d9eee1;
+    --bgsignup: #04aa6d;
+    --white_color: #fff;
+    --tit_color: #fff4a3;
 }
 
 .wrapper {
@@ -228,7 +232,7 @@ ul {
         padding: 0.5rem;
         width: 11rem;
         font-size: 1rem;
-        border: 1px solid #bfbfbf;
+        border: 1px solid var(--border_color);
     }
 }
 
@@ -273,7 +277,7 @@ ul {
 
 } */
 .login > a {
-    background-color: #d9eee1;
+    background-color: var(--bga_color);
     border-radius: 1.37rem;
     padding: 0.68rem 1.5rem 0.68rem 1.5rem ;
     display: block;
@@ -291,10 +295,10 @@ ul {
         left: 2.3rem;
     }
     .signup > a{
-        background-color: #04aa6d;
+        background-color: var(--bgsignup);
         border-radius: 22px;
         padding: 0.68rem 1.31rem 0.68rem 1.31rem;
-        color: #fff;
+        color: var(--white_color);
         display: block;
     }
 }
@@ -340,7 +344,7 @@ ul {
 /* ########### list bar mobile ########### */
 
 .mobile_bar{
-    background-color: #282a35;
+    background-color: var(--second_color);
     padding: 1rem 0rem;
 }
 .mult_sign::after{
@@ -350,7 +354,7 @@ ul {
 }
 
 .mult_sign{
-    background-color: #282a35;
+    background-color: var(--second_color);
     padding-bottom: 1rem;
     padding-right: 1.2rem;
 }
@@ -367,7 +371,7 @@ ul {
 }
 
 .tutorial_line{
-    background-color: #fff;
+    background-color: var(--white_color);
     padding: 1.3rem;
     font-size: 19px;
     padding-left: 2rem;
@@ -378,7 +382,7 @@ ul {
 }
 
 .first_title{
-    color: #fff4a3;
+    color: var(--tit_color);
     padding: 2rem 0 1rem 2.5rem;
 }
 
@@ -389,30 +393,30 @@ ul {
 
 .submenu{
     padding-left: 2rem;
-    color: #fff;
+    color: var(--white_color);
 }
 .submenu > li{
     padding: 0.5rem;
 }
 
 .submenu > li > a{
-    color: #fff4a3;
+    color: var(--tit_color);
     padding: 1px 8px 1px 8px;
-    border: 1px solid #fff4a3;
+    border: 1px solid var(--tit_color);
     border-radius: 0.62rem;
     margin-left: 0.5rem;
     opacity: 0.9;
 }
 
 .mobile_list > ul> li > a{
-    color: #fff;
+    color: var(--white_color);
     padding-left: 2.5rem;
     font-size: 1.12rem;
 }
 
 .mobile_list > ul > li:not(:first-child){
     padding: 1rem 0 1rem 0rem;
-    border-bottom: 1px solid #43444a;
+    border-bottom: 1px solid var(--primary_color);
 }
 .mobile_list> ul > li > svg{
     float: right;
